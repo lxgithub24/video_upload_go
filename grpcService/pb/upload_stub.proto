@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package protobuf;
+
+service UploadStub {
+    rpc QueryStubInfo (GetRequest) returns (ResponseStub) {}
+}
+
+message GetRequest {
+    string stub = 1;
+}
+
+message StubInfo {
+    string file_gcid = 1;
+    string file_name = 2;
+}
+
+message ResponseStub {
+    repeated StubInfo results = 1;
+}

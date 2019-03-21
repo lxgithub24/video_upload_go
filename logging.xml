@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seelog>
+  <outputs>
+    <splitter formatid="debuglog">
+    <filter levels="debug">
+      <file path="/data/logs/golivephoto/debug.log"/>
+      <console/>
+    </filter>
+    </splitter>
+    <splitter formatid="errorlog">
+    <filter levels="error">
+      <file path="/data/logs/golivephoto/error.log"/>
+    </filter>
+    </splitter>
+    <splitter formatid="tracelog">
+    <filter levels="trace">
+      <file path="/data/logs/golivephoto/trace.log"/>
+    </filter>
+    </splitter>
+    <splitter formatid="infolog">
+      <filter levels="info">
+        <file path="/data/logs/golivephoto/info.log"/>
+      </filter>
+    </splitter>
+    <rollingfile type="size" filename="/data/logs/golivephoto/info.log" maxsize="200000000" maxrolls="10" />
+    <rollingfile type="size" filename="/data/logs/golivephoto/nohup.log" maxsize="200000000" maxrolls="10" />
+  </outputs>
+  <formats>
+    <format id="debuglog" format="%Msg%n"/>
+    <format id="errorlog" format="%Msg%n"/>
+    <format id="tracelog" format="%Msg%n"/>
+    <format id="infolog" format="%Msg%n"/>
+  </formats>
+</seelog>

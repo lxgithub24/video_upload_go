@@ -1,0 +1,1 @@
+protoc -I /home/liuxianga/golocal/src/live_photo_go/grpcService/pb /home/liuxianga/golocal/src/live_photo_go/grpcService/pb/upload_stub.proto --go_out=plugins=grpc:/home/liuxianga/golocal/src/live_photo_go/grpcService/pb

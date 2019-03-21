@@ -1,0 +1,32 @@
+package: golivephoto
+import:
+- package: github.com/bitly/go-simplejson
+- package: github.com/cihub/seelog
+- package: github.com/fvbock/endless
+- package: github.com/getsentry/raven-go
+- package: github.com/gin-gonic/gin
+- package: github.com/golang/protobuf
+  subpackages:
+  - proto
+- package: github.com/hashicorp/consul
+  subpackages:
+  - api
+- package: github.com/jinzhu/gorm
+  subpackages:
+  - dialects/mysql
+- package: github.com/prometheus/client_golang
+  subpackages:
+  - prometheus
+  - prometheus/promhttp
+- package: github.com/prometheus/common
+  subpackages:
+  - log
+- package: github.com/qiniu/api.v7
+  subpackages:
+  - auth/qbox
+  - storage
+- package: golang.org/x/net
+  subpackages:
+  - context
+- package: google.golang.org/grpc
+- package: gopkg.in/redis.v5
